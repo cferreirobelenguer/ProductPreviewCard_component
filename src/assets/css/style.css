@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "fraunces";
+  src: url("../fonts/fraunces.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url("../fonts/montserrat.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+html {
+  background-color: #F3EBE4;
+}
+
+#card_container {
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+}
+.card_text .card_title1 {
+  font-family: "montserrat";
+  color: hsl(228deg, 12%, 48%);
+  font-weight: 500;
+  text-align: left;
+  padding-left: 20px;
+}
+.card_text .card_title {
+  font-family: "fraunces";
+  font-weight: 800;
+  padding: 20px 80px 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  color: hsl(212deg, 21%, 14%);
+}
+.card_text .card_subtitle {
+  font-family: "montserrat";
+  color: hsl(228deg, 12%, 48%);
+  text-align: left;
+  padding: 20px 80px 10px 20px;
+}
+.card_text .card_price {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card_text .card_price .card_priceActual {
+  padding: 20px;
+  color: hsl(158deg, 36%, 37%);
+  font-size: 14px;
+  font-family: "fraunces";
+}
+.card_text .card_price .card_priceBefore {
+  font-family: "fraunces";
+  padding: 20px;
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+}
+.card_text .card_button {
+  padding-bottom: 20px;
+}
+.card_text .card_button #card_buttonStyle {
+  background-color: hsl(158deg, 36%, 37%);
+  height: 40px;
+  width: 250px;
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+}
+
+@media (max-width: 2000px) {
+  #card_containerResponsive {
+    display: none;
+  }
+}
+@media (max-width: 775px) {
+  #card_container {
+    display: none;
+  }
+  #card_containerResponsive {
+    border-radius: 20px;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  #card_containerResponsive .card_title1Responsive {
+    font-family: "montserrat";
+    color: hsl(228deg, 12%, 48%);
+    font-weight: 500;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  #card_containerResponsive .card_titleResponsive {
+    font-family: "fraunces";
+    font-weight: 800;
+    padding: 20px 80px 10px 20px;
+    text-align: left;
+    font-size: 14px;
+    color: hsl(212deg, 21%, 14%);
+  }
+  #card_containerResponsive .card_subtitleResponsive {
+    font-family: "montserrat";
+    color: hsl(228deg, 12%, 48%);
+    text-align: left;
+    padding: 20px 80px 10px 20px;
+  }
+  #card_containerResponsive .card_priceResponsive {
+    display: flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #card_containerResponsive .card_priceResponsive .card_priceActualResponsive {
+    padding: 20px;
+    color: hsl(158deg, 36%, 37%);
+    font-size: 14px;
+    font-family: "fraunces";
+  }
+  #card_containerResponsive .card_priceResponsive .card_priceBeforeResponsive {
+    font-family: "fraunces";
+    padding: 20px;
+    color: hsl(228deg, 12%, 48%);
+    text-decoration: line-through;
+  }
+  #card_containerResponsive .card_buttonResponsive {
+    padding-bottom: 20px;
+  }
+  #card_containerResponsive .card_buttonResponsive #card_buttonStyleResponsive {
+    background-color: hsl(158deg, 36%, 37%);
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    color: white;
+    margin-left: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,103 @@
+
+
+@import './fonts/fonts.scss';
+@import './color/color.scss';
+@import './general/general.scss';
+@import './grid/grid.scss';
+@import './otherVariables/otherVariables.scss';
+@import './mediaQueries/queries.scss';
+@import './styleFunctions/styleFunctions.scss';
+
+#card_container{
+    background-color: $colorGrid;
+    border-radius: 20px;
+    @include grid-row;
+}
+.card_text{
+    @include grid-column;
+    padding: $pixel20;
+    .card_title1{
+        @include cardTitle1
+    }
+    .card_title{
+        @include cardTitle
+    }
+    .card_subtitle{
+        @include cardSubtitle
+    }
+
+    .card_price{
+        display:flex;
+        @include grid-row;
+        .card_priceActual{
+            @include priceActual
+
+        }
+        .card_priceBefore{
+            @include priceBefore
+        }
+    }
+        .card_button{
+            @include cardButton;
+            #card_buttonStyle{
+                @include buttonStyle
+            }
+        }
+    }
+
+    
+
+//media querie
+
+@include for-desktop{
+    #card_containerResponsive{
+        display: none;
+    }
+}
+
+@include for-phone{
+    #card_container{
+        display:none
+    }
+    #card_containerResponsive{
+        border-radius: 20px;
+        display: block;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .card_title1Responsive{
+            @include cardTitle1;
+            padding-top: 20px;
+        }
+        .card_titleResponsive{
+            @include cardTitle
+        }
+        .card_subtitleResponsive{
+            @include cardSubtitle
+        }
+        .card_priceResponsive{
+            display:flex;
+            @include grid-row;
+            .card_priceActualResponsive{
+                @include priceActual
+            }
+            .card_priceBeforeResponsive{
+                @include priceBefore
+            }
+
+        }
+        .card_buttonResponsive{
+            @include cardButton;
+            #card_buttonStyleResponsive{
+                @include buttonStyle
+            }
+
+        }
+    
+    }
+
+}
+
+
+

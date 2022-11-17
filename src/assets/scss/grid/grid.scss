@@ -1,0 +1,22 @@
+//grid variables
+
+$row:row;
+$column:column;
+$center:center;
+$start:flex-start;
+
+
+//grid styles
+
+@mixin grid-row {
+    display:flex;
+    flex-direction: $row;
+    justify-content: $start;
+    align-items: $center;
+}
+@mixin grid-column {
+    display:flex;
+    flex-direction: $column;
+    justify-content: $start;
+    align-items:$start;
+}

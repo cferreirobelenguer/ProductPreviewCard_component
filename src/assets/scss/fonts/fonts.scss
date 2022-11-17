@@ -1,0 +1,27 @@
+//font style
+
+@font-face {
+    font-family: "fraunces";
+    src: url("../fonts/fraunces.ttf")
+    format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "montserrat";
+    src: url("../fonts/montserrat.ttf")
+    format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+//Variables
+
+//font variables
+//font-family
+$fraunces:"fraunces";
+$montserrat:"montserrat";
+//font-weight
+$fontweight800:800;
+$fontweight500:500;
+//font-size
+$fontsize:14px;

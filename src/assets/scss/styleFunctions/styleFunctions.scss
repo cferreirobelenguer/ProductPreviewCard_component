@@ -1,0 +1,46 @@
+//card style
+
+@mixin cardTitle1{
+    font-family: $montserrat;
+    color:$colorParrafo;
+    font-weight: $fontweight500;
+    text-align: $left;
+    padding-left: $pixel20;
+}
+@mixin cardTitle{
+    font-family: $fraunces;
+    font-weight: $fontweight800;
+    padding:$pixel20 $pixel80 $pixel10 $pixel20;
+    text-align: $left;
+    font-size: $fontsize;
+    color:$colorTitle;
+}
+@mixin cardSubtitle{
+    font-family: $montserrat;
+    color:$colorParrafo;
+    text-align: $left;
+    padding:$pixel20 $pixel80 $pixel10 $pixel20;
+}
+@mixin priceActual{
+    padding: $pixel20;
+    color:$colorButtons;
+    font-size: $fontsize;
+    font-family: $fraunces;
+}
+@mixin priceBefore{
+    font-family: $fraunces;
+    padding: $pixel20;
+    color:$colorParrafo;
+    text-decoration:line-through;
+}
+@mixin cardButton{
+    padding-bottom: 20px;
+}
+@mixin buttonStyle{
+    background-color: $colorButtons;
+    height: 40px;
+    width: 250px;
+    text-align: center;
+    color:$colorWhite;
+    margin-left:$pixel20;
+}

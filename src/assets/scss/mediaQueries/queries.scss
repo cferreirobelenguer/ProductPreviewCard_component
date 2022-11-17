@@ -1,0 +1,9 @@
+
+//media queries
+
+@mixin for-phone{
+    @media (max-width: 775px) { @content; }
+}
+@mixin for-desktop{
+    @media (max-width:  2000px) { @content; }
+}
