@@ -40,8 +40,18 @@
         .card_button{
             @include cardButton;
             #card_buttonStyle{
-                @include buttonStyle
+                @include buttonStyle;
+                &:hover{
+                    @include buttonHover;
+                }
+                &:active{
+                    @include buttonHover;
+                }
+                &:visited{
+                    @include buttonHover;
+                }
             }
+            
         }
     }
 
@@ -51,17 +61,17 @@
 
 @include for-desktop{
     #card_containerResponsive{
-        display: none;
+        @include ocultarComponente
     }
 }
 
 @include for-phone{
     #card_container{
-        display:none
+        @include ocultarComponente
     }
     #card_containerResponsive{
+        @include mostrarComponente;
         border-radius: 20px;
-        display: block;
         display:flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -90,7 +100,16 @@
         .card_buttonResponsive{
             @include cardButton;
             #card_buttonStyleResponsive{
-                @include buttonStyle
+                @include buttonStyle;
+                &:hover{
+                    @include buttonHover;
+                }
+                &:active{
+                    @include buttonHover;
+                }
+                &:visited{
+                    @include buttonHover;
+                }
             }
 
         }

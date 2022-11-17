@@ -44,3 +44,14 @@
     color:$colorWhite;
     margin-left:$pixel20;
 }
+
+@mixin buttonHover{
+    background-color: $colorButtonHover;
+}
+@mixin ocultarComponente{
+    display:none
+}
+@mixin mostrarComponente{
+    display:none
+}
+
